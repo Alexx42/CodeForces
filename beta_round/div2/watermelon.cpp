@@ -6,11 +6,12 @@ void test_case() {
 	int w;
 
 	cin >> w;
-
-	if (w % 2 == 0)
-		cout << "YES" << endl;
-	else
+	if (w <= 3 || ((w & 1) && w % 2 != 0)) {
 		cout << "NO" << endl;
+	}
+	else {
+		cout << "YES" << endl;
+	}
 }
 
 int main() {
